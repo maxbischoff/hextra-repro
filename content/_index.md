@@ -3,15 +3,12 @@ title: My Site
 toc: false
 ---
 
-This is the landing page.
+{{% details title="hidden" closed="true" %}}
+```
+this is a unformatted code block
+```
 
-## Explore
-
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+```yaml
+this is a formatted code block
+```
+{{% /details %}}
