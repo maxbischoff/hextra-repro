@@ -3,15 +3,18 @@ title: My Site
 toc: false
 ---
 
-This is the landing page.
+{{% details title="filetree" closed="true" %}}
+  {{< filetree/container >}}
+    {{< filetree/folder name="dir1" >}}
+      {{< filetree/file name="file1" >}}
+      {{< filetree/file name="file2" >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/container >}}
+{{% /details %}}
 
-## Explore
-
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< filetree/container >}}
+  {{< filetree/folder name="dir1" >}}
+    {{< filetree/file name="file1" >}}
+    {{< filetree/file name="file2" >}}
+  {{< /filetree/folder >}}
+{{< /filetree/container >}}
